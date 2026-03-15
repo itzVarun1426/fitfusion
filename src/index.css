@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0B0B0B;
+  --color-secondary: #121212;
+  --color-accent: #B6FF00;
+  --color-card: #1A1A1A;
+  --font-heading: 'Montserrat', 'Poppins', 'Bebas Neue', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-primary text-white font-body overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading uppercase;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px rgba(182, 255, 0, 0.5);
+  }
+  .box-glow {
+    box-shadow: 0 0 15px rgba(182, 255, 0, 0.3);
+  }
+  .box-glow-hover:hover {
+    box-shadow: 0 0 20px rgba(182, 255, 0, 0.6);
+  }
+}
