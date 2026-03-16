@@ -32,7 +32,7 @@ const Testimonials = () => {
           <motion.h2 
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             className="text-4xl md:text-5xl font-heading font-bold mb-4"
           >
             YOUR SUCCESS STORIES, <span className="text-accent underline decoration-accent underline-offset-8">OUR INSPIRATION</span>
@@ -45,7 +45,7 @@ const Testimonials = () => {
               key={idx}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               className="bg-card p-8 border border-white/5 hover:border-accent/30 transition-colors relative"
             >

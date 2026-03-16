@@ -51,7 +51,7 @@ const Services = () => {
           <motion.h2 
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             className="text-4xl md:text-5xl font-heading font-bold mb-4"
           >
             DISCOVER WHAT <span className="text-accent border-b-4 border-accent pb-1">SETS US APART</span>
@@ -59,7 +59,7 @@ const Services = () => {
           <motion.p 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ delay: 0.2 }}
             className="text-gray-400 max-w-2xl mx-auto"
           >
@@ -71,7 +71,7 @@ const Services = () => {
           variants={container}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: false, margin: "-100px" }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
         >
           {services.map((service, idx) => (

@@ -95,7 +95,7 @@ const Contact = () => {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             className="relative z-10"
           >
 
@@ -156,7 +156,7 @@ const Contact = () => {
           <motion.form
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             onSubmit={handleSubmit}
             className="flex flex-col gap-6"
           >

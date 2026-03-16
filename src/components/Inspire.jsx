@@ -33,7 +33,7 @@ const Inspire = () => {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: false, margin: "-100px" }}
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
@@ -47,7 +47,7 @@ const Inspire = () => {
               variants={container}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: true, margin: "0px" }}
+              viewport={{ once: false, margin: "0px" }}
               className="grid grid-cols-1 sm:grid-cols-2 gap-6"
             >
               {features.map((feature, idx) => (
@@ -69,7 +69,7 @@ const Inspire = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: false, margin: "-100px" }}
             transition={{ duration: 0.8 }}
             className="relative"
           >

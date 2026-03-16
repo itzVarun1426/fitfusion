@@ -10,7 +10,7 @@ const Experience = () => {
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-heading font-bold">
@@ -24,7 +24,7 @@ const Experience = () => {
           <motion.div 
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.6 }}
             className="group relative h-[500px] sm:h-[600px] overflow-hidden bg-primary group"
           >
@@ -53,7 +53,7 @@ const Experience = () => {
           <motion.div 
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="group relative h-[500px] sm:h-[600px] overflow-hidden bg-primary"
           >

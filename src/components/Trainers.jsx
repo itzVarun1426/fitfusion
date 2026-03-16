@@ -34,7 +34,7 @@ const Trainers = () => {
           <motion.h2 
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             className="text-4xl md:text-5xl font-heading font-bold mb-4"
           >
             YOUR FITNESS GOALS, <span className="text-accent">THEIR EXPERTISE</span>
@@ -42,7 +42,7 @@ const Trainers = () => {
           <motion.p 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ delay: 0.2 }}
             className="text-gray-400 max-w-2xl mx-auto"
           >
@@ -56,7 +56,7 @@ const Trainers = () => {
               key={idx}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               transition={{ duration: 0.6, delay: idx * 0.2 }}
               className="group relative overflow-hidden bg-card"
             >

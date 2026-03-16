@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="min-h-screen bg-primary text-white font-body selection:bg-accent selection:text-primary scroll-smooth">
       <Navbar />
-      <main>
+      <main className="overflow-x-hidden">
         <Hero />
         <Inspire />
         <Services />

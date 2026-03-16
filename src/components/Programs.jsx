@@ -20,7 +20,7 @@ const Programs = () => {
             <motion.h2 
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               className="text-4xl md:text-5xl font-heading font-bold mb-4"
             >
               TRAIN SMARTER, UNLEASH YOUR <span className="text-accent">POTENTIAL</span>
@@ -38,7 +38,7 @@ const Programs = () => {
               key={idx}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
+              viewport={{ once: false, margin: "-50px" }}
               transition={{ delay: program.delay, duration: 0.5 }}
               className="group relative h-[400px] overflow-hidden bg-card cursor-pointer"
             >
