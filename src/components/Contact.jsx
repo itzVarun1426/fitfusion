@@ -141,7 +141,7 @@ const Contact = () => {
                   <h4 className="font-bold uppercase tracking-widest text-sm text-gray-400 mb-1">
                     Email
                   </h4>
-                  <p className="text-lg">contact@fitfusiongym.com</p>
+                  <p className="text-lg">contact@testSitegym.com</p>
                 </div>
               </div>
 

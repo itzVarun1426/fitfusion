@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-primary border-t border-white/5 pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          
+
           <div className="col-span-1 lg:col-span-1">
             <div className="flex items-center gap-2 mb-6">
               <Dumbbell className="text-accent h-8 w-8" />
@@ -50,10 +50,10 @@ const Footer = () => {
             <ul className="space-y-4 text-gray-400">
               <li>123 Fitness Ave, NY 10001</li>
               <li>+1 (555) 123-4567</li>
-              <li>join@fitfusion.com</li>
+              <li>join@testSite.com</li>
             </ul>
           </div>
-          
+
         </div>
 
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">

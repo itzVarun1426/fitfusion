@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Dumbbell } from 'lucide-react';
+import { Menu, X, Codesandbox } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
@@ -26,11 +26,11 @@ const Navbar = () => {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-primary/95 backdrop-blur-md py-4' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          
+
           <div className="flex items-center gap-2">
-            <Dumbbell className="text-accent h-8 w-8" />
+            <Codesandbox className="text-accent h-8 w-8" />
             <span className="font-heading text-2xl tracking-wider font-bold">
-              FIT<span className="text-accent">FUSION</span>
+              TEST<span className="text-accent">SITE</span>
             </span>
           </div>
 
@@ -58,16 +58,16 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           className="md:hidden bg-secondary border-t border-gray-800"
         >
           <div className="px-4 pt-2 pb-6 space-y-1">
             {navLinks.map((link) => (
-              <a 
-                key={link.name} 
-                href={link.href} 
+              <a
+                key={link.name}
+                href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="block px-3 py-3 text-base font-medium text-gray-300 hover:text-accent border-b border-gray-800"
               >
