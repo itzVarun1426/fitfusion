@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dumbbell, Instagram, Twitter, Linkedin, Facebook } from 'lucide-react';
+import { Instagram, Twitter, Linkedin, Facebook, Codesandbox } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -9,9 +9,9 @@ const Footer = () => {
 
           <div className="col-span-1 lg:col-span-1">
             <div className="flex items-center gap-2 mb-6">
-              <Dumbbell className="text-accent h-8 w-8" />
+              <Codesandbox className="text-accent h-8 w-8" />
               <span className="font-heading text-2xl tracking-wider font-bold">
-                FIT<span className="text-accent">FUSION</span>
+                TEST<span className="text-accent">SITE</span>
               </span>
             </div>
             <p className="text-gray-400 mb-6">
@@ -58,7 +58,7 @@ const Footer = () => {
 
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} FitFusion. All rights reserved.
+            © {new Date().getFullYear()} TESTSITE. All rights reserved.
           </p>
           <div className="flex gap-4 text-sm text-gray-500">
             <a href="#" className="hover:text-accent transition-colors">Privacy Policy</a>

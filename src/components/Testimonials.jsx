@@ -8,7 +8,7 @@ const Testimonials = () => {
       name: "Marcus R.",
       role: "Pro Athlete",
       image: "https://images.unsplash.com/photo-1543807535-eceef0bc6599?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
-      text: "FitFusion changed my life. The trainers are incredibly supportive and the workouts are next level. I've broken all my personal records since joining."
+      text: "This gym changed my life. The trainers are incredibly supportive and the workouts are next level. I've broken all my personal records since joining."
     },
     {
       name: "Sarah Jenkins",
@@ -27,9 +27,9 @@ const Testimonials = () => {
   return (
     <section className="py-24 bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div className="text-center mb-16">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
@@ -41,7 +41,7 @@ const Testimonials = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {reviews.map((review, idx) => (
-            <motion.div 
+            <motion.div
               key={idx}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -50,19 +50,19 @@ const Testimonials = () => {
               className="bg-card p-8 border border-white/5 hover:border-accent/30 transition-colors relative"
             >
               <Quote className="absolute top-6 right-6 text-white/5 w-16 h-16" />
-              
+
               <div className="flex text-accent mb-6">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-current" />)}
               </div>
-              
+
               <p className="text-gray-300 italic mb-8 relative z-10 leading-relaxed text-lg">
                 "{review.text}"
               </p>
-              
+
               <div className="flex items-center gap-4">
-                <img 
-                  src={review.image} 
-                  alt={review.name} 
+                <img
+                  src={review.image}
+                  alt={review.name}
                   className="w-14 h-14 rounded-full object-cover border-2 border-accent p-0.5"
                 />
                 <div>
