@@ -10,9 +10,9 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/10 to-transparent z-10" />
         <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-primary/80 z-10" />
         <img
-          src="/images/hero.png"
+          src="/images/hero2.jpg"
           alt="Muscular athlete with dumbbells"
-          className="w-full h-full object-cover object-[center_10%] opacity-70"
+          className="w-full h-full object-cover object-[70%_5%] opacity-70"
         />
       </div>
 

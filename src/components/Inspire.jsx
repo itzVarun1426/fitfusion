@@ -78,7 +78,7 @@ const Inspire = () => {
 
             <div className="relative z-10 p-2 bg-gradient-to-br from-accent/50 to-transparent">
               <img
-                src="/images/inspire.png"
+                src="/images/hero1.jpg"
                 alt="Gym athlete pose"
                 className="w-full h-auto object-cover border border-white/10 filter contrast-125 "
               />
