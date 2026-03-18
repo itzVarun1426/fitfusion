@@ -99,12 +99,13 @@ const Contact = () => {
             className="relative z-10"
           >
 
-            <h2 className="text-4xl md:text-6xl font-heading font-black mb-4">
+            <h2 className="text-3xl md:text-5xl font-heading font-black mb-2">
               CONNECT <span className="text-accent">•</span> ENGAGE <span className="text-accent">•</span> TRANSFORM
             </h2>
 
-            <p className="text-gray-400 mb-12 max-w-md">
-              Ready to take the first step? Get in touch with our team to learn more about memberships, programs, and personal training.
+            <p className="text-gray-200 mb-12 max-w-md text-xl">
+              Pune,Maharashtra
+              • Open 6AM – 10PM
             </p>
 
             <div className="space-y-8">
@@ -145,6 +146,19 @@ const Contact = () => {
                 </div>
               </div>
 
+            </div>
+            <div className="mt-12">
+              <h4 className="text-sm uppercase tracking-widest text-gray-400 mb-4">
+                Find Us Here
+              </h4>
+
+              <div className="rounded-xl overflow-hidden border border-white/10 shadow-lg hover:scale-[1.02] transition-transform duration-300">
+                <iframe
+                  src="https://www.google.com/maps?q=Pune,Maharashtra&output=embed"
+                  className="w-full h-[250px]"
+                  loading="lazy"
+                ></iframe>
+              </div>
             </div>
 
           </motion.div>
