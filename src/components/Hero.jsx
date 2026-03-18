@@ -24,8 +24,8 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-black leading-tight tracking-tight mb-2">
-              SCULPT YOUR <span className="text-white border-text">BODY</span><br />
-              <span className="text-accent">ELEVATE</span> YOUR SPIRIT
+              Transform Yourself in<br />
+              <span className="text-accent">90 DAYS</span>
             </h1>
           </motion.div>
 
@@ -45,12 +45,34 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4"
           >
             {/* <a href="#contact" className="bg-accent text-primary px-8 py-4 font-bold uppercase tracking-wider hover:bg-white transition-all duration-300 flex items-center justify-center gap-2 group box-glow-hover">
-              Let's Start
+              Start Free Trial
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </a>
             <a href="#programs" className="border border-white/30 flex items-center justify-center px-8 py-4 font-bold uppercase tracking-wider hover:bg-white/10 transition-colors">
               View Programs
             </a> */}
+
+            <div className="mt-6 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+
+              {/* Primary CTA */}
+              <a
+                href="#contact"
+                className="w-full sm:w-auto bg-accent text-primary px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-bold uppercase tracking-wider rounded-lg flex items-center justify-center gap-2 group transition-all duration-300 hover:bg-white hover:text-black box-glow-hover"
+              >
+                Start Free Trial
+                <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+              </a>
+
+              {/* Secondary CTA */}
+              <a
+                href="#programs"
+                className="w-full sm:w-auto border border-white/30 px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-bold uppercase tracking-wider rounded-lg flex items-center justify-center transition-all duration-300 hover:bg-white/10"
+              >
+                View Programs
+              </a>
+
+            </div>
+
           </motion.div>
         </div>
       </div>
