@@ -80,7 +80,7 @@ const Inspire = () => {
               <img
                 src="/images/hero1.jpg"
                 alt="Gym athlete pose"
-                className="w-full h-auto object-cover border border-white/10 filter contrast-125 "
+                className="w-full h-auto object-cover border border-white/10 filter contrast-125 transition-transform duration-[3000ms] hover:scale-103"
               />
             </div>
 

@@ -12,7 +12,7 @@ const Hero = () => {
         <img
           src="/images/hero2.jpg"
           alt="Muscular athlete with dumbbells"
-          className="w-full h-full object-cover object-[70%_5%] opacity-70"
+          className="w-full h-full object-cover object-[70%_5%] opacity-90 transition-transform duration-[3000ms] hover:scale-110"
         />
       </div>
 
@@ -64,11 +64,15 @@ const Hero = () => {
               </a>
 
               {/* Secondary CTA */}
+
               <a
-                href="#programs"
+                href="https://wa.me/918605866254?text=Hello,%20I%20would%20like%20to%20know%20more%20about%20your%20gym%20membership."
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full sm:w-auto border border-white/30 px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-bold uppercase tracking-wider rounded-lg flex items-center justify-center transition-all duration-300 hover:bg-white/10"
+                aria-label="Chat on WhatsApp"
               >
-                View Programs
+                Contact on Whatsapp
               </a>
 
             </div>
