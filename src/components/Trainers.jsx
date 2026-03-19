@@ -37,7 +37,7 @@ const Trainers = () => {
             viewport={{ once: false }}
             className="text-4xl md:text-5xl font-heading font-bold mb-4"
           >
-            YOUR FITNESS GOALS, <span className="text-accent">THEIR EXPERTISE</span>
+         <span className="text-accent">TRAINERS</span>
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0 }}
