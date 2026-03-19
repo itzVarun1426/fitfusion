@@ -7,7 +7,7 @@ const Programs = () => {
     { name: "Kettlebell Masterclass", image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", delay: 0.2 },
     { name: "Cardio Power Boost", image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", delay: 0.3 },
     { name: "Hypertrophy", image: "/images/hero.png", delay: 0.4 },
-    { name: "Rope Climbing", image: "https://images.unsplash.com/photo-1526506114642-54452145b207?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", delay: 0.5 },
+    { name: "Rope Climbing", image: "https://plus.unsplash.com/premium_photo-1664109999512-9f97c601f9c3?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", delay: 0.5 },
     { name: "TRX Suspension", image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", delay: 0.6 },
   ];
 
@@ -23,7 +23,7 @@ const Programs = () => {
               viewport={{ once: false }}
               className="text-4xl md:text-5xl font-heading font-bold mb-4"
             >
-              TRAIN SMARTER, UNLEASH YOUR <span className="text-accent">POTENTIAL</span>
+              CHECKOUT OUR <span className="text-accent">PROGRAMS</span>
             </motion.h2>
             <p className="text-gray-400">
               Explore our diverse range of specialized training programs designed to push your limits and achieve the extraordinary.

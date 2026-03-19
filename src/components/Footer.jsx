@@ -1,70 +1,79 @@
-import React from 'react';
-import { Instagram, Twitter, Linkedin, Facebook, Codesandbox } from 'lucide-react';
+import React from "react";
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary border-t border-white/5 pt-16 pb-8">
+    <footer className="bg-[#0a0f05] text-white py-12 border-t border-white/5">
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
 
-          <div className="col-span-1 lg:col-span-1">
-            <div className="flex items-center gap-2 mb-6">
-              <Codesandbox className="text-accent h-8 w-8" />
-              <span className="font-heading text-2xl tracking-wider font-bold">
-                TEST<span className="text-accent">SITE</span>
-              </span>
-            </div>
-            <p className="text-gray-400 mb-6">
-              Empowering individuals to reach their peak physical and mental potential through elite training and community support.
+        <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-8 text-center md:text-left">
+
+          {/* LEFT */}
+          <div>
+            <h2 className="text-2xl font-heading font-bold text-accent mb-4">
+              TEST<span className="text-white">SITE</span>
+            </h2>
+
+            <p className="text-gray-400 text-sm max-w-xs mx-auto md:mx-0">
+              Your Go-To For Personalized Workouts, Meal Plans, And Expert Fitness Advice
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="text-gray-400 hover:text-accent transition-colors"><Facebook className="w-5 h-5" /></a>
-              <a href="#" className="text-gray-400 hover:text-accent transition-colors"><Instagram className="w-5 h-5" /></a>
-              <a href="#" className="text-gray-400 hover:text-accent transition-colors"><Twitter className="w-5 h-5" /></a>
-              <a href="#" className="text-gray-400 hover:text-accent transition-colors"><Linkedin className="w-5 h-5" /></a>
+          </div>
+
+          {/* CENTER */}
+          <div className="flex flex-col items-center">
+
+            <p className="text-accent font-semibold mb-4">Follow Us On</p>
+
+            {/* Icons */}
+            <div className="flex gap-6 mb-6">
+              <div className="bg-white text-black p-3 rounded-md hover:scale-110 transition">
+                <Facebook size={18} />
+              </div>
+              <div className="bg-white text-black p-3 rounded-md hover:scale-110 transition">
+                <Linkedin size={18} />
+              </div>
+              <div className="bg-white text-black p-3 rounded-md hover:scale-110 transition">
+                <Instagram size={18} />
+              </div>
+              <div className="bg-white text-black p-3 rounded-md hover:scale-110 transition">
+                <Twitter size={18} />
+              </div>
             </div>
+
+            {/* Links */}
+            <div className="flex gap-6 text-sm text-gray-400">
+              <a href="#home" className="hover:text-accent transition">Home</a>
+              <a href="#services" className="hover:text-accent transition">Services</a>
+              <a href="#about" className="hover:text-accent transition">About</a>
+              <a href="#programs" className="hover:text-accent transition">Programs</a>
+      
+        
+            </div>
+
           </div>
 
-          <div>
-            <h4 className="font-heading font-bold uppercase tracking-wider mb-6">Explore</h4>
-            <ul className="space-y-4">
-              <li><a href="#home" className="text-gray-400 hover:text-accent transition-colors">Home</a></li>
-              <li><a href="#about" className="text-gray-400 hover:text-accent transition-colors">About</a></li>
-              <li><a href="#programs" className="text-gray-400 hover:text-accent transition-colors">Programs</a></li>
-              <li><a href="#trainers" className="text-gray-400 hover:text-accent transition-colors">Trainers</a></li>
-            </ul>
-          </div>
+          {/* RIGHT */}
+          <div className="text-center md:text-right">
+            <h3 className="text-accent font-semibold mb-4">Contact</h3>
 
-          <div>
-            <h4 className="font-heading font-bold uppercase tracking-wider mb-6">Programs</h4>
-            <ul className="space-y-4">
-              <li><a href="#" className="text-gray-400 hover:text-accent transition-colors">Cardio</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-accent transition-colors">Strength</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-accent transition-colors">HIIT</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-accent transition-colors">Endurance</a></li>
-            </ul>
-          </div>
+            <p className="text-gray-400 text-sm">
+              Monday-Sunday
+            </p>
+            <p className="text-gray-400 text-sm mb-3">
+              8:00 AM - 5:00 PM
+            </p>
 
-          <div>
-            <h4 className="font-heading font-bold uppercase tracking-wider mb-6">Contact</h4>
-            <ul className="space-y-4 text-gray-400">
-              <li>123 Fitness Ave, NY 10001</li>
-              <li>+1 (555) 123-4567</li>
-              <li>join@testSite.com</li>
-            </ul>
+            <p className="text-gray-400 text-sm">
+              E-mail
+            </p>
+            <p className="text-gray-400 text-sm">
+              TESTEMAIL@gmail.com
+            </p>
           </div>
 
         </div>
 
-        <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} TESTSITE. All rights reserved.
-          </p>
-          <div className="flex gap-4 text-sm text-gray-500">
-            <a href="#" className="hover:text-accent transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-accent transition-colors">Terms of Service</a>
-          </div>
-        </div>
       </div>
     </footer>
   );

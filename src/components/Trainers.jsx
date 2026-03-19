@@ -8,19 +8,19 @@ const Trainers = () => {
       name: "Blake Hunter",
       specialty: "Strength & Conditioning",
       experience: "10+ Years",
-      image: "https://images.unsplash.com/photo-1567013127542-490d757e51fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1750521281030-964a37f24cb9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3ltJTIwcGVyc29ufGVufDB8fDB8fHww"
     },
     {
       name: "Liam Crossfit",
       specialty: "Crossfit & Mobility",
       experience: "8 Years",
-      image: "https://images.unsplash.com/photo-1583465554959-b903f706e5da?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1491756975177-a13d74ed1e2f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGd5bSUyMHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D"
     },
     {
       name: "Logan Torque",
       specialty: "Bodybuilding & Nutrition",
       experience: "12 Years",
-      image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1647780796058-66b174e97d5f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGd5bSUyMHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D"
     }
   ];
 

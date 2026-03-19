@@ -18,7 +18,8 @@ const Hero = () => {
 
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="lg:w-2/3">
-          <motion.div
+          <motion.div 
+            
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -39,6 +40,7 @@ const Hero = () => {
           </motion.p>
 
           <motion.div
+
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}

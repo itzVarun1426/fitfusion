@@ -306,7 +306,7 @@ const Experience = () => {
               className="relative h-[260px] overflow-hidden group cursor-pointer"
             >
               <img
-                src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80"
+                src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Strength"
                 className="w-full h-full object-cover transition duration-700 group-hover:scale-110"
               />
@@ -340,7 +340,7 @@ const Experience = () => {
               className="relative h-[260px] overflow-hidden group cursor-pointer"
             >
               <img
-                src="https://images.unsplash.com/photo-1552674605-171b1ea0807b?auto=format&fit=crop&w=800&q=80"
+                src="https://images.unsplash.com/flagged/photo-1556746834-cbb4a38ee593?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Speed"
                 className="w-full h-full object-cover transition duration-700 group-hover:scale-110"
               />
