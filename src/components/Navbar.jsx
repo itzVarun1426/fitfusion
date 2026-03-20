@@ -19,6 +19,7 @@ const Navbar = () => {
     { name: 'About', href: '#about' },
     { name: 'Programs', href: '#programs' },
     { name: 'Trainers', href: '#trainers' },
+    { name: 'Pricing', href: '#pricing' },
     { name: 'Contact', href: '#contact' }
   ];
 
@@ -26,14 +27,14 @@ const Navbar = () => {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-primary/95 backdrop-blur-md py-4' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-
+<a href="#home">
           <div className="flex items-center gap-2">
             <Codesandbox className="text-accent h-8 w-8" />
             <span className="font-heading text-2xl tracking-wider font-bold">
               TEST<span className="text-accent">SITE</span>
             </span>
           </div>
-
+</a>
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <a key={link.name} href={link.href} className="text-gray-300 hover:text-accent hover:text-glow transition-colors font-body text-sm uppercase tracking-wide">

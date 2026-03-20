@@ -6,6 +6,7 @@ import Services from './components/Services';
 import Programs from './components/Programs';
 import Experience from './components/Experience';
 import Trainers from './components/Trainers';
+import Pricing from './components/Pricing';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -21,6 +22,7 @@ function App() {
         <Programs />
         <Experience />
         <Trainers />
+        <Pricing />
         <Testimonials />
         <Contact />
       </main>

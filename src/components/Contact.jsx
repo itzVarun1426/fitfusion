@@ -126,24 +126,26 @@ const Contact = () => {
                 <div className="bg-primary p-3 border border-white/10">
                   <Phone className="text-accent w-6 h-6" />
                 </div>
-                <div>
+                <a href="tel:+918605866254"><div>
                   <h4 className="font-bold uppercase tracking-widest text-sm text-gray-400 mb-1">
                     Phone
                   </h4>
                   <p className="text-lg">+91 8605866254</p>
-                </div>
+                </div></a>
               </div>
 
               <div className="flex items-start gap-4">
                 <div className="bg-primary p-3 border border-white/10">
                   <Mail className="text-accent w-6 h-6" />
                 </div>
-                <div>
-                  <h4 className="font-bold uppercase tracking-widest text-sm text-gray-400 mb-1">
-                    Email
-                  </h4>
-                  <p className="text-lg">contact@testSitegym.com</p>
-                </div>
+                <a href="mailto:testgym@test.com">
+                  <div>
+                    <h4 className="font-bold uppercase tracking-widest text-sm text-gray-400 mb-1">
+                      Email
+                    </h4>
+                    <p className="text-lg">contact@testSitegym.com</p>
+                  </div>
+                </a>
               </div>
 
             </div>
