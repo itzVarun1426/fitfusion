@@ -74,9 +74,24 @@ const Footer = () => {
 
         </div>
 
+        {/* Bottom Bar */}
+        <div className="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-gray-500 text-xs uppercase tracking-widest font-bold">
+            &copy; {new Date().getFullYear()} Test Site. All rights reserved.
+          </p>
+
+          <div className="flex gap-6 text-[10px] font-bold uppercase tracking-widest text-gray-600">
+            <a href="/admin/login" className="hover:text-accent transition-colors">Admin Access</a>
+            <span className="opacity-20">|</span>
+            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+            <span className="opacity-20">|</span>
+            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+          </div>
+        </div>
+
       </div>
     </footer>
   );
 };
 
-export default Footer;
+export default Footer;

@@ -1,8 +1,39 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { conf, storage, databases } from '../appwrite/config';
 import { CheckCircle2, TrendingUp, HeartPulse, Trophy, Users, Zap } from 'lucide-react';
 
 const Inspire = () => {
+
+  const [inspire, setInspire] = useState(null);
+
+  // ✅ Fetch inspire data
+  useEffect(() => {
+    const fetchInspire = async () => {
+      try {
+        const res = await databases.listDocuments(
+          conf.databaseId,
+          conf.inspireCollectionId
+        );
+
+        setInspire(res.documents[0]); // take first document
+        console.log("Inspire data:", res.documents[0]);
+      } catch (err) {
+        console.error("Error fetching inspire data:", err);
+      }
+    };
+
+    fetchInspire();
+  }, []);
+
+  // ✅ Image helper with fallback
+  const getImageUrl = (fileId) => {
+    if (!fileId) return "/images/hero1.jpg";
+    return `${import.meta.env.VITE_APPWRITE_ENDPOINT}/storage/buckets/${conf.bucketId}/files/${fileId}/view?project=${import.meta.env.VITE_APPWRITE_PROJECT_ID}&mode=admin`;
+  };
+
+
+
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -33,30 +64,29 @@ const Inspire = () => {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false, margin: "-100px" }}
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
               INSPIRED TO INSPIRE YOUR <span className="text-accent">BEST SELF</span>
             </h2>
+
             <p className="text-gray-400 text-lg mb-10 max-w-xl">
-              Discover powerful programs designed to unlock your potential. We provide the tools, the expertise, and the environment. You bring the dedication.
+              Discover powerful programs designed to unlock your potential.
             </p>
 
             <motion.div
               variants={container}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: false, margin: "0px" }}
               className="grid grid-cols-1 sm:grid-cols-2 gap-6"
             >
               {features.map((feature, idx) => (
                 <motion.div
                   key={idx}
                   variants={itemOffset}
-                  className="flex items-center gap-4 bg-card p-4 hover:border hover:border-accent transition-all duration-300 group cursor-default"
+                  className="flex items-center gap-4 bg-card p-4 hover:border hover:border-accent transition-all duration-300"
                 >
-                  <div className="bg-primary p-2 group-hover:box-glow transition-all duration-300">
+                  <div className="bg-primary p-2">
                     {feature.icon}
                   </div>
                   <span className="font-medium tracking-wide">{feature.text}</span>
@@ -65,26 +95,24 @@ const Inspire = () => {
             </motion.div>
           </motion.div>
 
-          {/* Right side image */}
+          {/* ✅ Image Section */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: false, margin: "-100px" }}
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            {/* Decorative Glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-accent/20 blur-[100px] rounded-full z-0 pointer-events-none" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-accent/20 blur-[100px] rounded-full z-0" />
 
             <div className="relative z-10 p-2 bg-gradient-to-br from-accent/50 to-transparent">
               <img
-                src="/images/hero1.jpg"
+                src={getImageUrl(inspire?.imageId)}
+                onError={(e) => { e.target.onerror = null; e.target.src = "/images/hero1.jpg"; }}
+
                 alt="Gym athlete pose"
-                className="w-full h-auto object-cover border border-white/10 filter contrast-125 transition-transform duration-[3000ms] hover:scale-103"
+                className="w-full h-auto object-cover border border-white/10"
               />
             </div>
-
-
           </motion.div>
 
         </div>

@@ -1,34 +1,27 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Inspire from './components/Inspire';
-import Services from './components/Services';
-import Programs from './components/Programs';
-import Experience from './components/Experience';
-import Trainers from './components/Trainers';
-import Pricing from './components/Pricing';
-import Testimonials from './components/Testimonials';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import { Routes, Route } from 'react-router-dom';
+import LandingPage from './components/LandingPage';
+import Login from './pages/Admin/Login';
+import Dashboard from './pages/Admin/Dashboard/Dashboard';
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
   return (
-    <div className="min-h-screen bg-primary text-white font-body selection:bg-accent selection:text-primary scroll-smooth">
-      <Navbar />
-      <main className="overflow-x-hidden">
-        <Hero />
-        <Inspire />
-        <Services />
-        <Programs />
-        <Experience />
-        <Trainers />
-        <Pricing />
-        <Testimonials />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/admin/login" element={<Login />} />
+      <Route 
+        path="/admin/*" 
+        element={
+          <ProtectedRoute>
+            <Dashboard />
+          </ProtectedRoute>
+        } 
+      />
+    </Routes>
   );
 }
 
+
 export default App;
+
