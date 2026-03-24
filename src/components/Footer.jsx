@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
@@ -81,7 +81,7 @@ const Footer = () => {
           </p>
 
           <div className="flex gap-6 text-[10px] font-bold uppercase tracking-widest text-gray-600">
-            <a href="/admin/login" className="hover:text-accent transition-colors">Admin Access</a>
+            <Link to="/admin/login" className="hover:text-accent transition-colors">Admin Access</Link>
             <span className="opacity-20">|</span>
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <span className="opacity-20">|</span>
