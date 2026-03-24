@@ -88,7 +88,7 @@ const Trainers = () => {
 
                 <div className="absolute bottom-0 left-0 w-full p-8 translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
                   <h3 className="text-3xl font-heading font-bold uppercase mb-1">{trainer.name}</h3>
-                  <p className="text-accent font-bold tracking-widest text-sm uppercase mb-3">{trainer.specialty}</p>
+                  <p className="text-accent font-bold tracking-widest text-sm uppercase mb-3">{trainer.speciality}</p>
                   <p className="text-gray-400 text-sm mb-6 uppercase tracking-wider">
                     Experience: {trainer.experience}
                   </p>

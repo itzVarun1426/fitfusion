@@ -10,7 +10,7 @@ const TrainersManager = () => {
   const [editingId, setEditingId] = useState(null);
   const [formData, setFormData] = useState({
     name: '',
-    specialty: '',
+    speciality: '',
     experience: '',
     instagram: '',
     twitter: '',
@@ -41,7 +41,7 @@ const TrainersManager = () => {
   const resetForm = () => {
     setFormData({
       name: '',
-      specialty: '',
+      speciality: '',
       experience: '',
       instagram: '',
       twitter: '',
@@ -57,7 +57,7 @@ const TrainersManager = () => {
   const handleEdit = (trainer) => {
     setFormData({
       name: trainer.name,
-      specialty: trainer.specialty,
+      speciality: trainer.speciality,
       experience: trainer.experience,
       instagram: trainer.instagram || '',
       twitter: trainer.twitter || '',
@@ -177,7 +177,7 @@ const TrainersManager = () => {
               </div>
               <div className="flex-1 min-w-0">
                 <h3 className="text-lg font-bold uppercase tracking-wide truncate">{trainer.name}</h3>
-                <p className="text-accent text-xs font-bold uppercase tracking-widest mb-1 truncate">{trainer.specialty}</p>
+                <p className="text-accent text-xs font-bold uppercase tracking-widest mb-1 truncate">{trainer.speciality}</p>
                 <p className="text-gray-500 text-[10px] uppercase font-bold tracking-widest">EXP: {trainer.experience}</p>
                 <div className="flex gap-2 mt-2 opacity-30">
                   {trainer.instagram && <Instagram className="w-3 h-3" />}
@@ -258,9 +258,8 @@ const TrainersManager = () => {
                   <div className="space-y-4">
                     <label className="block text-gray-400 text-[10px] font-bold uppercase tracking-widest">Specialty</label>
                     <input 
-                      required
-                      value={formData.specialty}
-                      onChange={(e) => setFormData({...formData, specialty: e.target.value})}
+                      value={formData.speciality}
+                      onChange={(e) => setFormData({...formData, speciality: e.target.value})}
                       className="w-full bg-primary border border-white/10 p-4 text-white outline-none focus:border-accent"
                       placeholder="e.g. BODYBUILDING"
                     />
