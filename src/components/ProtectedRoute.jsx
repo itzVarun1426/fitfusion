@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import { account } from '../appwrite/config';
+import useAutoLogout from '../hooks/useAutoLogout';
 
 const ProtectedRoute = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [user, setUser] = useState(null);
+  useAutoLogout(); // Auto-logout after inactivity
 
   useEffect(() => {
     const checkUser = async () => {

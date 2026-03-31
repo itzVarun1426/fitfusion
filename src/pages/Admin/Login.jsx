@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { account } from '../../appwrite/config';
 import { motion } from 'framer-motion';
@@ -7,9 +7,24 @@ import { Lock, Mail, Codesandbox } from 'lucide-react';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const checkSession = async () => {
+      try {
+        await account.get();
+        // Session active, redirect to dashboard
+        navigate('/admin');
+      } catch (error) {
+        // No session, stay on login
+      } finally {
+        setLoading(false);
+      }
+    };
+    checkSession();
+  }, [navigate]);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -20,7 +35,12 @@ const Login = () => {
       await account.createEmailPasswordSession(email, password);
       navigate('/admin');
     } catch (err) {
-      setError(err.message || 'Invalid credentials');
+      if (err.message?.includes('prohibited when a session is active')) {
+        // Session already exists, redirect to dashboard
+        navigate('/admin');
+      } else {
+        setError(err.message || 'Invalid credentials');
+      }
     } finally {
       setLoading(false);
     }
