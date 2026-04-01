@@ -51,8 +51,8 @@ const Login = () => {
       {/* Background elements */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-secondary/30 transform skew-x-12 z-0 pointer-events-none" />
       <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-accent/10 blur-[120px] rounded-full" />
-      
-      <motion.div 
+
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         className="max-w-md w-full z-10"
@@ -70,7 +70,7 @@ const Login = () => {
 
         <div className="bg-secondary p-8 border border-white/5 relative overflow-hidden group">
           <div className="absolute top-0 left-0 w-full h-1 bg-accent transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
-          
+
           <form onSubmit={handleLogin} className="space-y-6">
             {error && (
               <div className="bg-red-500/10 border border-red-500/50 text-red-500 p-4 text-sm font-medium uppercase tracking-wider">
@@ -117,11 +117,11 @@ const Login = () => {
             </button>
           </form>
         </div>
-        
+
         <div className="mt-8 text-center">
-            <a href="/" className="text-gray-500 hover:text-accent transition-colors text-xs uppercase tracking-widest font-bold">
-                ← Back to Site
-            </a>
+        <a href="/" className="text-gray-500 hover:text-accent transition-colors text-xs uppercase tracking-widest font-bold">
+            ← Back to Site
+          </a>
         </div>
       </motion.div>
     </div>
